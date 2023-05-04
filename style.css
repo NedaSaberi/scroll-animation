@@ -1,0 +1,50 @@
+.boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    overflow-x: hidden;
+}.box{
+    width: 225px;
+    height: 225px;
+    background-repeat: no-repeat;
+    transform: translateX(800px);
+    transition: transform .5s linear;
+}
+.box:nth-of-type(even){
+    transform: translateX(-800px);
+}   
+.box:nth-child(1){
+    background-image: url(./images/1.jfif);
+}
+.box:nth-child(2){
+    background-image: url(./images/2.jfif);
+}
+.box:nth-child(3){
+    background-image: url(./images/3.jfif);
+}
+.box:nth-child(4){
+    background-image: url(./images/4.jfif);
+}
+.box:nth-child(5){
+    background-image: url(./images/5.jfif);
+}
+.box:nth-child(6){
+    background-image: url(./images/6.jfif);
+}
+.box:nth-child(7){
+    background-image: url(./images/7.jfif);
+}
+.box:nth-child(8){
+    background-image: url(./images/8.jfif);
+}
+.box:nth-child(9){
+    background-image: url(./images/9.jfif);
+}
+.box:nth-child(10){
+    background-image: url(./images/10.jfif);
+}
+.boxes .box.show{
+    transform: translateX(0);
+}
